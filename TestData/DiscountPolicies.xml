@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<DiscountPolicies>
+  <Rules>
+	<Rule Name="Успей купить в мае чайник на дачу">
+		<For ItemWithId="11024"/>
+		<To Date="31.05.2013"/>
+		<Discount Type="Fixed">25</Discount>
+    </Rule>
+	<Rule Name="Rule1">
+		<For ItemWithId="11025"/>
+		<To Date="31.05.2013"/>
+		<Discount Type="Fixed">40</Discount>
+    </Rule>
+  </Rules>
+  
+  <Items>
+    <Item Name="Чайники" Id="11024">
+		<Items>
+			<Item Name="Чайник 'Бодрость'" Id="11025"/>
+			<ItemRef Id="11026"/>
+		</Items>
+    </Item>	
+	<Item Name="Электрочайник Vitek" Id="11026"/>	
+  </Items>
+</DiscountPolicies>	
