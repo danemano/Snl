@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<Snl>
+	<objects>
+		<object Name="ObjectName" Type = "WebPage">
+			<Path>http://bash.im/</Path>
+		</object>
+	</objects>
+</Snl>	
