@@ -5,11 +5,11 @@ namespace Snl.Engine
 {
     class DictionaryBasedEngineState : IEngineState
     {
-        readonly List<ISnlObject> _objects = new List<ISnlObject>();
+        readonly List<IExecutableObject> _objects = new List<IExecutableObject>();
         public string GetValue(string name)
         {
             var obj = _objects.Single(t => t.Name == name);
-            return obj.GetValue();
+            return obj.Execute();
         }
     }
 }

@@ -40,10 +40,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DictionaryBasedEngineState.cs" />
+    <Compile Include="Engine.cs" />
+    <Compile Include="ExecutableObject.cs" />
     <Compile Include="IEngineState.cs" />
-    <Compile Include="ISnlObject.cs" />
+    <Compile Include="IExecutableObject.cs" />
+    <Compile Include="ISnlObjectExecutor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SnlObject.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Snl.Parser\Snl.Parser.csproj">
+      <Project>{52d38dbc-e0ec-4c94-acbb-dea5c278921f}</Project>
+      <Name>Snl.Parser</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

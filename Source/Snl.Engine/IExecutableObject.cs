@@ -1,9 +1,9 @@
 ﻿namespace Snl.Engine
 {
-    public interface ISnlObject
+    public interface IExecutableObject
     {
         string Name { get; }
 
-        string GetValue();
+        string Execute();
     }
 }
